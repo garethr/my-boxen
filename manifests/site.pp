@@ -64,9 +64,6 @@ node default {
   }
 
   # node versions
-  include nodejs::v0_4
-  include nodejs::v0_6
-  include nodejs::v0_8
   include nodejs::v0_10
 
   # default ruby versions
@@ -88,4 +85,53 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  include alfred
+  include vagrant
+  include firefox
+  include virtualbox
+  include arq
+  include caffeine
+  include clojure
+  include cyberduck
+  include dropbox
+  include erlang
+  include git
+  include go
+  include googledrive
+  include google_app_engine::python
+  include handbrake
+  include graphviz
+  include heroku
+  include imagemagick
+  include iterm2::stable
+  include java
+  include macvim
+  include onepassword
+  include packer
+  include phantomjs
+  include propane
+  include spotify
+  include tmux
+  include vmware_fusion
+  include wget
+  include zsh
+  include python
+  include chrome
+
+  phantomjs::version { '1.9.2': }
+
+  class { 'intellij':
+    edition => 'community',
+  }
+
+  git::config::global { 'user.email':
+    value  => 'gareth@morethanseven.net'
+  }
+  
+  include osx::finder::show_all_on_desktop
+  include osx::finder::empty_trash_securely
+  include osx::finder::unhide_library
+  include osx::no_network_dsstores
+
 }

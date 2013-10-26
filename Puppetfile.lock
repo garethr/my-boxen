@@ -1,4 +1,14 @@
 GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.1.6)
+
+GITHUBTARBALL
+  remote: boxen/puppet-arq
+  specs:
+    arq (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
@@ -9,9 +19,44 @@ GITHUBTARBALL
     boxen (3.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-clojure
+  specs:
+    clojure (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-cyberduck
+  specs:
+    cyberduck (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-erlang
+  specs:
+    erlang (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.1.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -24,6 +69,36 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-go
+  specs:
+    go (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-google_app_engine
+  specs:
+    google_app_engine (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-googledrive
+  specs:
+    googledrive (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-graphviz
+  specs:
+    graphviz (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-handbrake
+  specs:
+    handbrake (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-heroku
+  specs:
+    heroku (2.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.4.1)
@@ -32,6 +107,31 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-imagemagick
+  specs:
+    imagemagick (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-intellij
+  specs:
+    intellij (1.3.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-macvim
+  specs:
+    macvim (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -44,9 +144,54 @@ GITHUBTARBALL
     nodejs (3.2.9)
 
 GITHUBTARBALL
+  remote: boxen/puppet-onepassword
+  specs:
+    onepassword (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.6.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-packer
+  specs:
+    packer (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pcre
+  specs:
+    pcre (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-phantomjs
+  specs:
+    phantomjs (2.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pkgconfig
+  specs:
+    pkgconfig (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-propane
+  specs:
+    propane (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-property_list_key
+  specs:
+    property_list_key (0.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-python
+  specs:
+    python (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -59,14 +204,54 @@ GITHUBTARBALL
     ruby (6.3.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-spotify
+  specs:
+    spotify (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-swig
+  specs:
+    swig (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.7)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vmware_fusion
+  specs:
+    vmware_fusion (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -79,20 +264,58 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
+  alfred (= 1.1.6)
+  arq (= 1.0.0)
   autoconf (= 1.0.0)
   boxen (= 3.0.2)
+  caffeine (= 1.0.0)
+  chrome (= 1.1.1)
+  clojure (= 1.2.0)
+  cyberduck (= 1.0.1)
   dnsmasq (= 1.0.0)
+  dropbox (= 1.1.1)
+  erlang (= 1.0.1)
+  firefox (= 1.1.4)
   gcc (= 2.0.1)
   git (= 1.2.5)
+  git (= 1.2.5)
+  go (= 1.0.1)
+  google_app_engine (= 1.0.0)
+  googledrive (= 1.0.2)
+  graphviz (= 1.0.0)
+  handbrake (= 1.0.1)
+  heroku (= 2.0.0)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
+  imagemagick (= 1.2.1)
   inifile (= 1.0.0)
+  intellij (= 1.3.0)
+  iterm2 (= 1.0.3)
+  java (= 1.1.0)
+  macvim (= 1.0.0)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
+  onepassword (= 1.0.2)
   openssl (= 1.0.0)
+  osx (= 1.6.0)
+  packer (= 1.0.3)
+  pcre (= 1.0.0)
+  phantomjs (= 2.0.2)
+  pkgconfig (= 1.0.0)
+  propane (= 1.0.0)
+  property_list_key (= 0.1.0)
+  python (= 1.1.1)
   repository (= 2.2.0)
   ruby (= 6.3.4)
+  spotify (= 1.0.1)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  swig (= 1.0.0)
+  tmux (= 1.0.2)
+  vagrant (= 3.0.0)
+  virtualbox (= 1.0.7)
+  vmware_fusion (= 1.0.0)
+  wget (= 1.0.0)
   xquartz (= 1.1.0)
+  zsh (= 1.0.0)
 
