@@ -119,7 +119,7 @@ node default {
   include python
   include chrome
 
-  go::version { '1.2': }
+  go::version { '1.1': }
 
   phantomjs::version { '1.9.2': }
 
