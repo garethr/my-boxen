@@ -119,6 +119,8 @@ node default {
   include python
   include chrome
 
+  go::version { '1.1': }
+
   phantomjs::version { '1.9.2': }
 
   class { 'intellij':
@@ -128,7 +130,7 @@ node default {
   git::config::global { 'user.email':
     value  => 'gareth@morethanseven.net'
   }
-  
+
   include osx::finder::show_all_on_desktop
   include osx::finder::empty_trash_securely
   include osx::finder::unhide_library
