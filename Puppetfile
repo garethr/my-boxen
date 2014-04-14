@@ -61,9 +61,9 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 
 github "alfred",      "1.1.6"
-#github "vagrant",     "3.0.7"
+github "vagrant",     "3.0.7"
 github "firefox",     "1.1.4"
-#github "virtualbox",  "1.0.11"
+github "virtualbox",  "1.0.11"
 github "arq",         "1.0.0"
 github "caffeine",    "1.0.0"
 github "chrome",      "1.1.1"
