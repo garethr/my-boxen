@@ -1,6 +1,6 @@
 require boxen::environment
 require homebrew
-require gcc
+#require gcc
 
 Exec {
   group       => 'staff',
@@ -53,10 +53,9 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
+  #include dnsmasq
   include git
   include hub
-  include nginx
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -67,10 +66,8 @@ node default {
   include nodejs::v0_10
 
   # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
-  include ruby::2_0_0
+  ruby::version { '1.9.3-p448': }
+  ruby::version { '2.1.1': }
 
   # common, useful packages
   package {
@@ -86,10 +83,9 @@ node default {
     target => $boxen::config::repodir
   }
 
-  include alfred
-  include vagrant
+  #include vagrant
   include firefox
-  include virtualbox
+  #include virtualbox
   include arq
   include caffeine
   include clojure
@@ -97,7 +93,7 @@ node default {
   include dropbox
   include erlang
   include git
-  include go
+  #include go
   include googledrive
   include google_app_engine::python
   include handbrake
@@ -119,7 +115,7 @@ node default {
   include python
   include chrome
 
-  go::version { '1.1': }
+  #go::version { '1.1': }
 
   phantomjs::version { '1.9.2': }
 
