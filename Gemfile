@@ -14,5 +14,5 @@ gem "deep_merge",             "~> 1.0"
 group :development do
   gem "aws-sdk", "~> 1.37"
   gem "net-ssh"
-  gem "rbvmomi"
+  gem "rbvmomi", "1.8.1"
 end
