@@ -83,7 +83,9 @@ node default {
     target => $boxen::config::repodir
   }
 
-  #include vagrant
+  class { 'vagrant':
+    version => '1.6.3',
+  }
   include firefox
   #include virtualbox
   include arq
@@ -93,7 +95,6 @@ node default {
   include dropbox
   include erlang
   include git
-  #include go
   include googledrive
   include google_app_engine::python
   include handbrake
@@ -114,8 +115,6 @@ node default {
   include zsh
   include python
   include chrome
-
-  #go::version { '1.1': }
 
   phantomjs::version { '1.9.2': }
 
