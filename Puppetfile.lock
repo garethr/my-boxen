@@ -209,11 +209,6 @@ GITHUBTARBALL
     skype (1.0.8)
 
 GITHUBTARBALL
-  remote: boxen/puppet-sonos
-  specs:
-    sonos (1.0.3)
-
-GITHUBTARBALL
   remote: boxen/puppet-spotify
   specs:
     spotify (1.0.1)
@@ -262,6 +257,11 @@ GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
+
+GITHUBTARBALL
+  remote: garethr/puppet-sonos
+  specs:
+    sonos (1.0.4)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -325,7 +325,7 @@ DEPENDENCIES
   repository (= 2.3.0)
   ruby (= 8.0.4)
   skype (= 1.0.8)
-  sonos (= 1.0.3)
+  sonos (= 1.0.4)
   spotify (= 1.0.1)
   stdlib (= 4.2.2)
   sudo (= 1.0.0)
