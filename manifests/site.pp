@@ -115,6 +115,9 @@ node default {
   include zsh
   include python
   include chrome
+  include nmap
+  include skype
+  include sonos
 
   phantomjs::version { '1.9.2': }
 
