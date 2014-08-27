@@ -1,6 +1,6 @@
 require boxen::environment
 require homebrew
-#require gcc
+require gcc
 
 Exec {
   group       => 'staff',
@@ -53,7 +53,7 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  #include dnsmasq
+  include dnsmasq
   include git
   include hub
 
@@ -64,10 +64,11 @@ node default {
 
   # node versions
   include nodejs::v0_10
+  nodejs::version { 'v0.10.1': }
 
   # default ruby versions
-  ruby::version { '1.9.3-p448': }
-  ruby::version { '2.1.1': }
+  #ruby::version { '1.9.3-p448': }
+  #ruby::version { '2.1.2': }
 
   # common, useful packages
   package {
@@ -87,34 +88,30 @@ node default {
     version => '1.6.3',
   }
   include firefox
-  #include virtualbox
+  include virtualbox
   include arq
   include caffeine
   include clojure
-  include cyberduck
   include dropbox
   include erlang
   include git
-  include googledrive
-  include google_app_engine::python
+#  include googledrive
   include handbrake
   include graphviz
   include heroku
   include imagemagick
-  include iterm2::stable
+#  include iterm2::stable
   include java
   include macvim
-  include onepassword
   include packer
   include phantomjs
-  include propane
   include spotify
   include tmux
   include vmware_fusion
   include wget
   include zsh
   include python
-  include chrome
+#  include chrome
   include nmap
   include skype
   include sonos
